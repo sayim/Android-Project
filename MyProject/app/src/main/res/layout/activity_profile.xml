@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdijajsayim.myproject.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:src="@mipmap/ic_account_box_white_24dp"
+            android:background="@drawable/input_outline"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageShow"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/input_outline"
+            android:text="User Email"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailShow"
+            />
+        <TextView
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/input_outline"
+            android:text="UserName"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameText"
+            />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/input_outline"
+            android:text="User UniversityName"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/universityNameText"
+            />
+
+        <Button
+            android:layout_margin="10dp"
+            android:background="@drawable/input_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:id="@+id/logout"
+            />
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_profile"
+          android:icon="@mipmap/ic_account_box_white_24dp"
+          android:title="Profile"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_info"
+          android:title="Info"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_logout"
+          android:title="Logout"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/new_rating"
+          android:title="Rate another University"
+          android:icon="@mipmap/ic_add_white_24dp"
+          app:showAsAction="always"/>
+
+
+</menu>

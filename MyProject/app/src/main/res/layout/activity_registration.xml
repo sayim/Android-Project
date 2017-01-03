@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdijajsayim.myproject.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:id="@+id/LineraLayout"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/dreamunversity"
+            android:layout_above="@+id/scrollview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/imageView13"/>
+
+
+        <EditText
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:hint="Name"
+            android:background="@drawable/input_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userName"
+            />
+
+        <EditText
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:hint="University"
+            android:background="@drawable/input_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/universityName"
+            />
+        <EditText
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/input_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:id="@+id/EditTextEmail"
+            />
+
+        <EditText
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/input_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:id="@+id/EditTextPass"
+            />
+
+        <Button
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/input_outline"
+            android:textColor="@color/colorPrimary"
+            android:text="REGISTER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupButton"/>
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

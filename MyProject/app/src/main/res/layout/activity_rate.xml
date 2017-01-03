@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mdijajsayim.myproject.RateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:background="@drawable/input_outline"
+                    android:layout_height="50dp"
+                    app:srcCompat="@mipmap/add_btn"
+                    android:id="@+id/universityIcon"
+                    android:layout_weight="0.00"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_weight="0.00"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:padding="15dp"
+                android:text="Rate this university"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:numStars="10"
+                    style="@style/AlertDialog.AppCompat"/>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Add description"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/input_outline"
+                android:padding="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Add your opinion"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/description"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="80dp"
+                android:id="@+id/postBtn"
+                android:textSize="20dp"
+              android:layout_gravity="center"
+                android:background="@drawable/input_outline"
+                android:text="post"
+                android:textColor="@color/colorPrimary"
+             android:padding="15dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

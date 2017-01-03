@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_outline"
+    tools:context="com.example.mdijajsayim.myproject.CommentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:id="@+id/commentList"
+            ></ListView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Write a comment"
+            android:background="@drawable/input_outline"
+            android:id="@+id/commentField"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
